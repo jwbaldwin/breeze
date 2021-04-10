@@ -38,6 +38,7 @@ if (!gotTheLock) {
 
   const createWindow = async () => {
     mainWindow = new BrowserWindow({
+      titleBarStyle: 'hiddenInset',
       show: true,
       webPreferences: {
         preload: join(__dirname, '../../preload/dist/index.cjs'),

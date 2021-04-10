@@ -38,13 +38,19 @@ if (!gotTheLock) {
 
   const createWindow = async () => {
     mainWindow = new BrowserWindow({
-      titleBarStyle: 'hiddenInset',
       show: true,
+      titleBarStyle: 'hidden',
+      // transparent: true,
+      // vibrancy: 'sidebar',
       webPreferences: {
         preload: join(__dirname, '../../preload/dist/index.cjs'),
         contextIsolation: env.MODE !== 'test',   // Spectron tests can't work with contextIsolation: true
         enableRemoteModule: env.MODE === 'test', // Spectron tests can't work with enableRemoteModule: false
       },
+      width: 950,
+      height: 700,
+      minWidth: 600,
+      minHeight: 500,
     })
 
     /**

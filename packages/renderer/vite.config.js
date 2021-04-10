@@ -1,7 +1,7 @@
 /* eslint-env node */
 
 import {chrome} from '../../electron-vendors.config.json'
-import {join} from 'path'
+import { resolve } from 'path'
 import externalPackages from '../../external-packages.config.js'
 import {defineConfig} from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -24,7 +24,7 @@ export default defineConfig({
   root: PACKAGE_ROOT,
   resolve: {
     alias: {
-      '/@/': join(PACKAGE_ROOT, 'src') + '/',
+      '@': resolve(__dirname, './src'),
     },
   },
   plugins: [vue()],

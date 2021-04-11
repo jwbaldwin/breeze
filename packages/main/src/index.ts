@@ -47,8 +47,8 @@ if (!gotTheLock) {
         contextIsolation: env.MODE !== 'test',   // Spectron tests can't work with contextIsolation: true
         enableRemoteModule: env.MODE === 'test', // Spectron tests can't work with enableRemoteModule: false
       },
-      width: 950,
-      height: 700,
+      width: env.MODE === 'development' ? 1600 : 1200, // For the dev tools
+      height: 800,
       minWidth: 600,
       minHeight: 500,
     })

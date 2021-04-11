@@ -1,7 +1,11 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-    <div class="relative flex items-center px-6 py-5 space-x-3 bg-white border border-gray-300 rounded-lg shadow-sm hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500">
+  <div class="grid grid-cols-3 gap-4 sm:grid-cols-2">
+    <div
+      v-for="(template, index) in templates"
+      :key="index"
+      class="relative flex items-center px-6 py-5 space-x-3 bg-white border border-gray-300 rounded-lg shadow-sm hover:border-gray-400 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
+    >
       <div class="flex-shrink-0">
         <img
           class="w-10 h-10 rounded-full"
@@ -19,7 +23,7 @@
             aria-hidden="true"
           />
           <p class="text-sm font-medium text-gray-900">
-            Leslie Alexander
+            Leslie J. Alexander
           </p>
           <p class="text-sm text-gray-500 truncate">
             Co-Founder / CTO
@@ -27,16 +31,23 @@
         </a>
       </div>
     </div>
-
-  <!-- More items... -->
   </div>
 </template>
 
 <script lang="ts">
 import {defineComponent} from 'vue'
+import { Template, QnA } from 'types'
 
 export default defineComponent({
   name: 'Templates',
+  setup() {
+    const defaultTemplate = new Template('Default', [new QnA('When did you get engaged?')])
+    const templates = Array<Template>(defaultTemplate)
+
+    return {
+      templates,
+    }
+  },
 })
 </script>
 

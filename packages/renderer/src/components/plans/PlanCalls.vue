@@ -1,6 +1,6 @@
 <template>
   <div>
-    plas
+    Plans
   </div>
 </template>
 

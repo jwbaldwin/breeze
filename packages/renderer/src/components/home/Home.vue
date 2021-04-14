@@ -9,7 +9,7 @@
           <button
             id="sort-menu"
             type="button"
-            class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+            class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
             aria-expanded="false"
             aria-haspopup="true"
           >
@@ -144,17 +144,17 @@
                 Visit site
               </a>
               <button
-                class="relative bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                class="relative bg-white rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
                 type="button"
               >
                 <span class="sr-only">Add to favorites</span>
                 <!--
                       Heroicon name: solid/star
 
-                      Starred: "text-blue-300 hover:text-blue-400", Not Starred: "text-gray-300 hover:text-gray-400"
+                      Starred: "text-yellow-300 hover:text-yellow-400", Not Starred: "text-gray-300 hover:text-gray-400"
                     -->
                 <svg
-                  class="w-5 h-5 text-blue-300 hover:text-blue-400"
+                  class="w-5 h-5 text-yellow-300 hover:text-yellow-400"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                   fill="currentColor"

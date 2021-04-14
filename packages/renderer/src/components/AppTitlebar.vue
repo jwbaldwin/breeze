@@ -6,7 +6,7 @@
       <button
         v-if="shouldShowBackButton"
         type="button"
-        class="inline-flex items-center px-3 py-2 text-sm leading-4 text-gray-400 border border-gray-300 rounded-md font-base hover:border-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:text-gray-600"
+        class="inline-flex items-center px-3 py-2 text-sm leading-4 text-gray-400 border border-gray-300 rounded-full font-base hover:border-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 hover:text-gray-600"
         @click="back"
       >
         <!-- Heroicon name: solid/mail -->
@@ -23,7 +23,7 @@
             clip-rule="evenodd"
           />
         </svg>
-        Back
+        Home
       </button>
     </div>
   </div>

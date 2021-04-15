@@ -4,3 +4,4 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>
   export default component
 }
+//https://www.youtube.com/watch?v=V9MmoBAezD8
